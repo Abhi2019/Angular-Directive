@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Javascript/angular.min.js"></script>
+    <script src="Javascript/Directive.js"></script>
+    <script src="Javascript/Transclude.js"></script>
+    <script type="text/javascript">
+     
+
+    </script>
+    <title></title>
+</head>
+<body ng-app="myapp" >
+    <checklove></checklove>
+    <div ng-controller="testdirective">
+
+    <inter></inter>
+    {{name}} -{{place}}
+<!--<checkname mandir>Roll over me and check the console!</checkname>-->
+
+   Parent Scope : Name : <input type="text" ng-model="name" />
+   <br />
+   <!--Child Scope: <div customdiretive check="{{name}}" >-->
+    {{place}}
+    <placecheck testdrive="name"></placecheck>
+   </div>
+     
+
+ 
+</body>
+</html>
